@@ -114,3 +114,4 @@ bin/pulsar-client consume "persistent://public/default/iotjetsonjson" -s iotjets
 * https://clickhouse.com/docs/en/sql-reference/functions/type-conversion-functions/
 * https://github.com/tspannhw/FLiP-CloudIngest
 * https://github.com/tspannhw/StreamingAnalyticsUsingFlinkSQL
+* https://github.com/tspannhw/FLiP-Stream2Clickhouse
