@@ -111,7 +111,10 @@ bin/pulsar-client consume "persistent://public/default/iotjetsonjson" -s iotjets
 
 ## References
 
+* https://github.com/tspannhw/FLiPS-Xavier-Sensor
+* https://github.com/tspannhw/FLiP-CloudIngest
 * https://github.com/tspannhw/FLiP-SQL/
+* https://github.com/tspannhw/FLiP-EdgeAI
 * https://docs.altinity.com/altinitycloud/quickstartguide/yourfirstqueries/
 * https://clickhouse.com/docs/en/sql-reference/functions/date-time-functions/
 * https://clickhouse.com/docs/en/sql-reference/functions/type-conversion-functions/
