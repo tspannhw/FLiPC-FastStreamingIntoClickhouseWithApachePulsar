@@ -12,6 +12,9 @@ https://www.meetup.com/San-Francisco-Bay-Area-ClickHouse-Meetup/events/285271332
 
 ## altinity cloud setup
 
+
+![Clickhouse](https://github.com/tspannhw/FLiPC-FastStreamingIntoClickhouseWithApachePulsar/blob/main/altinityClickhouse.jpg?raw=true)
+
 * Login
 * Launch Cluster
 * Explore
