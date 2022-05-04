@@ -72,6 +72,9 @@ select uuid, systemtime, networktime, te, top1pct, top1, cputempf, gputempf, cpu
 from iotjetsonjson 
 order by systemtime desc
 
+select top1, max(toFloat32OrZero(top1pct)), max(gputempf), max(cputempf)
+from iotjetsonjson
+group by top1
 ```
 
 ## Altinity Cloud / Clickhouse / JDBC Sink Configuration
