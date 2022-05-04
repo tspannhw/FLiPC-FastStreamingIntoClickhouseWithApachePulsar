@@ -10,6 +10,11 @@ https://www.meetup.com/San-Francisco-Bay-Area-ClickHouse-Meetup/events/285271332
 
 ![Meetup](https://www.meetup.com/_next/image/?url=https%3A%2F%2Fsecure-content.meetupstatic.com%2Fimages%2Fclassic-events%2F501649071%2F676x380.webp&w=3840&q=75)
 
+
+## Slides
+
+https://www.slideshare.net/bunkertor/fast-streaming-into-clickhouse-with-apache-pulsar-pdf
+
 ## altinity cloud setup
 
 
