@@ -75,6 +75,11 @@ order by systemtime desc
 select top1, max(toFloat32OrZero(top1pct)), max(gputempf), max(cputempf)
 from iotjetsonjson
 group by top1
+
+select top1, max(toFloat32OrZero(top1pct)) as maxTop1, max(gputempf), max(cputempf)
+from iotjetsonjson
+group by top1
+order by maxTop1
 ```
 
 ## Altinity Cloud / Clickhouse / JDBC Sink Configuration
