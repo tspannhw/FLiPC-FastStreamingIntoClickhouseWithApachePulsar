@@ -151,6 +151,9 @@ describe `iotjetsonjson`;
 
 SELECT * FROM `iotjetsonjson`;
 
+SELECT top1, top1pct, cputempf, gputempf, memory, te, systemtime from `iotjetsonjson`;
+
+SELECT top1, top1pct, SUBSTRING(imageinput from 48) as imgnm, cputempf, gputempf, memory, te, systemtime from `iotjetsonjson`;
 ```
 
 
