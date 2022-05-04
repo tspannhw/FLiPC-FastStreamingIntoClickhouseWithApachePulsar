@@ -108,6 +108,51 @@ bin/pulsar-client consume "persistent://public/default/iotjetsonjson" -s iotjets
 
 ```
 
+### Pulsar SQL / Trino / Presto SQL
+
+```
+use pulsar."public/default";
+
+describe iotjetsonjson;
+
+select max(gputempf) as maxgputempf, max(cputemp) as maxcputemp, max(memory) as maxmemory from pulsar."public/default".iotjetsonjson;
+
+select * from pulsar."public/default".iotjetsonjson order by systemtime desc;
+
+```
+
+### Spark SQL
+
+```
+val dfPulsar = spark.readStream.format("pulsar").option("service.url", "pulsar://localhost:6650").option("admin.url", "http://localhost:8080").option("topic", "persistent://public/default/iotjetsonjson").load()
+
+dfPulsar.printSchema()
+
+val pQuery = dfPulsar.selectExpr("*").writeStream.format("console").option("truncate", "false").start()
+
+```
+
+
+### Flink SQL
+
+```
+CREATE CATALOG pulsar WITH (
+   'type' = 'pulsar',
+   'service-url' = 'pulsar://pulsar1:6650',
+   'admin-url' = 'http://pulsar1:8080',
+   'format' = 'json'
+);
+
+USE CATALOG pulsar;
+
+SHOW TABLES;
+
+describe `iotjetsonjson`;
+
+SELECT * FROM `iotjetsonjson`;
+
+```
+
 
 ## References
 
